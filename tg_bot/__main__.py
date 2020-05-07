@@ -18,18 +18,19 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-hoi {}, my name is {}! if you have any questions about how to use me please give me /help... 
+hoi {}, my name is {}! if you have any questions about how to use me please give me /help 
 
-im a group manager bot maintained by(@Zack_Opp47).
+im a group manager bot maintained by(@Born2Fight).
 
-My Support Group @Republik_TelegramID.
+My Support Group @RTIDBotDev.
 
-This is my [Deploy Code](https://heroku.com/deploy?template=https://github.com/zack-opp47/SekemJancok),
-you can create clone same like me..
+I'm still on BETA Tester, someday I will have more fiture for moderate your group
+You need create clone same like me, DM my Boss 👉👉👉👉 @Born2Fight
 
-For more commands click /help...
 
-**Keep in mind that any changes you DO do to the source have to be on github, as per the license.**
+For more commands click /help
+
+
 
 """
 
@@ -38,11 +39,11 @@ HELP_STRINGS = """
 Hello! my name *{}*.
 
 *Main* available commands:
- - /start: Start the bot...
- - /help: help....
+ - /start: Start the bot
+ - /help: to see all commands 
  - /donate: To find out more about donating!
  - /settings:
-   - in PM: To find out what SETTINGS you have set....
+   - in PM: To find out what SETTINGS you have set
    - in a group:
 
 {}
@@ -370,7 +371,7 @@ def donate(bot: Bot, update: Update):
 
         if OWNER_ID != 254318997 and DONATION_LINK:
             update.effective_message.reply_text("You can also donate to the person currently running me "
-                                                "[here]({})".format(DONATION_LINK),
+                                                "[here]({t.me/Zack_Opp47})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
 
     else:
